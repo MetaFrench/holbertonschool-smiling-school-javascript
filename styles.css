@@ -1,0 +1,317 @@
+@import url("style.css");
+
+/**--- Variables ---**/
+
+:root {
+  --font-family: 'Source Sans Pro', serif;
+  --color-white: #ffffff;
+  --color-dark: #252525;
+  --color-purple: #c271ff;
+  --color-grey: #979797;
+}
+
+/**--- Fonts ---**/
+
+
+
+/**--- Base ---**/
+
+body {
+  font-family: var(--font-family);
+}
+
+/**--- Background ---**/
+
+.homepage {
+  background-image: url('images/pic_1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center-top;
+}
+
+.pricing {
+  background-image: url('images/pic_2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center-top;
+}
+
+.courses {
+  background-image: url('images/pic_3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center-top;
+}
+
+.purple {
+  color: var(--color-purple);
+}
+
+/**--- Buttons ---**/
+
+.btn, .btn:hover, .btn:focus {
+  background-color: var(--color-purple);
+  border-color: var(--color-purple);
+}
+.btn:hover, .btn-focus {
+  opacity: 0.9;
+}
+.btn-shadow {
+  box-shadow: 0 0 10px 5px rgba(56, 56, 56, 0.813);
+}
+
+/**--- NavLinks ---**/
+
+li a:hover, li a:focus {
+  color: var(--color-purple) !important;
+  text-decoration: none;
+}
+
+/**a navbarLinks {
+  color: var(--color-white);
+  background-color: none;
+  border-color: none;
+  border-bottom: 3px solid white;
+}**/
+
+.navbar-toggler {
+  font-size: 2.25rem;
+  top: 3rem;
+}
+
+/**--- Carousels ---**/
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid var(--color-purple);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.purple-bg {
+  background-color: var(--color-purple) !important; 
+}
+
+.carousel-avatar {
+  margin-top: 2rem;
+}
+
+.phone {
+  display: block;
+}
+
+.tablet {
+  display: none;
+}
+
+.desktop {
+  display: none;
+}
+
+/* Purple Carousel Arrows */
+.leftArrow {
+  background-image: url('./images/arrow_white_left.png');
+  width: 50px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.rightArrow {
+  background-image: url('./images/arrow_white_right.png');
+  width: 50px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Video Carousel Arrows */
+.leftArrowVideo:before {
+	content: '\e903';
+	font-size: 8rem;
+	color: black;
+}
+
+.rightArrowVideo {
+	background-image: url('images/arrow_black_right.png');
+	font-size: 8rem;
+	color: black;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    display: inline-block;
+    width: 29px;
+    height: 62px;
+    background: no-repeat 50%/100% 100%
+}
+.carousel-control-prev-icon {
+    background-image: url("./images/arrow_white_left.png");
+}
+.carousel-control-next-icon {
+    background-image: url("./images/arrow_white_right.png");
+}
+
+
+.loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #C271FF;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 5s cubic-bezier(0.075, 0.82, 0.165, 5) infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Slick stuff */
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  color: #333;
+  transform: translateY(-69%); /* nice */
+}
+
+.slick-prev {
+  background: url('./images/arrow_black_left.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: none;
+}
+
+.slick-next {
+  background: url('./images/arrow_black_right.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: none;
+}
+
+/* .slick-prev:before,
+.slick-next:before {
+  
+} */
+
+.slick-prev {
+  left: 0;
+  font-size: 0;
+  width: 29px;
+  height: 62px;
+  background-color:rgba(0, 0, 0, 0.0);
+}
+
+.slick-next {
+  right: 0;
+  font-size: 0;
+  width: 29px;
+  height: 62px;
+  background-color:rgba(0, 0, 0, 0.0);
+}
+
+/**--- Membership ---**/
+
+.bg-dark {
+  color: var(--color-dark) !important;
+}
+
+/**--- Footer ---**/
+
+.fb-icon:before {
+  font-family: 'holberton_school-icon';
+  content: "\e908";
+  color: var(--color-white);
+}
+
+.twitter-icon:before {
+  font-family: 'holberton_school-icon';
+  content: "\e90f";
+  color: var(--color-white);
+}
+
+.insta-icon:before {
+  font-family: 'holberton_school-icon';
+  content: "\e90a";
+  color: var(--color-white);
+}
+
+.search:before {
+  font-family: 'holberton_school-icon';
+  content: "\e912";
+  color: var(--color-dark);
+}
+
+/**--- Pricing Grid ---**/
+
+.second-row p {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.third-row p {
+  font-size: 1.5rem;
+}
+
+.table {
+  max-width: 1110px;
+}
+
+.signal {
+  width: 8.8rem;
+  height: 3.5rem;
+}
+
+.holberton_school-icon-check {
+  font-size: 36px;
+  padding-top: 1.28rem;
+}
+
+/**--- FAQs ---**/
+
+.faq h1 {
+  font-size: 6rem;
+  font-weight: lighter;
+  padding-top: 7.5rem;
+  margin-bottom: 7.5rem;
+}
+
+.faq-question .p1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.faq-question .p2 {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+/**--- Courses ---**/
+
+.coiny {
+  font-family: 'Coiny', cursive;
+}
+
+/* Pre-pre-LD */
+.dropdown-item a:hover {
+	color: #C271FF !important;
+}
+
+#sort-by:focus,
+#sort-by:hover,
+#topic:focus,
+#topic:hover {
+	background-color: #C271FF;
+}
